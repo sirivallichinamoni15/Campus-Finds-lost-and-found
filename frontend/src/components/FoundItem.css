@@ -1,0 +1,344 @@
+.found-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+
+/* Header */
+
+.found-header {
+  background: linear-gradient(
+    135deg,
+    #16a34a,
+    #15803d
+  );
+
+  padding: 28px 7%;
+
+  color: white;
+}
+
+.back-button {
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+
+  padding: 10px 18px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateX(-3px);
+}
+
+
+.found-title {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-top: 30px;
+}
+
+.found-title-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  border-radius: 16px;
+
+  font-size: 28px;
+}
+
+.found-title h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.found-title p {
+  opacity: 0.9;
+}
+
+
+/* Main */
+
+.found-container {
+  width: 86%;
+  max-width: 1100px;
+
+  margin: 40px auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  gap: 30px;
+}
+
+
+/* Form Card */
+
+.found-card {
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 18px;
+
+  padding: 35px;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.form-heading {
+  margin-bottom: 28px;
+}
+
+.form-heading h2 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.form-heading p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* Form */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #1e293b;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 14px;
+
+  background: #f8fafc;
+
+  transition: 0.3s;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #16a34a;
+
+  background: white;
+
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+}
+
+
+/* Status */
+
+.status-info {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 15px;
+
+  margin-top: 10px;
+  margin-bottom: 25px;
+
+  border-radius: 12px;
+
+  background: #f0fdf4;
+
+  border: 1px solid #bbf7d0;
+
+  color: #166534;
+}
+
+.status-info span {
+  font-size: 25px;
+}
+
+.status-info strong {
+  font-size: 14px;
+}
+
+.status-info p {
+  margin-top: 3px;
+
+  font-size: 12px;
+
+  color: #15803d;
+}
+
+
+/* Buttons */
+
+.form-buttons {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+}
+
+.cancel-button {
+  padding: 12px 22px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: #64748b;
+
+  font-weight: 600;
+}
+
+.cancel-button:hover {
+  background: #f8fafc;
+}
+
+.submit-found-button {
+  padding: 12px 24px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #16a34a;
+
+  color: white;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.submit-found-button:hover {
+  background: #15803d;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 18px rgba(22, 163, 74, 0.25);
+}
+
+
+/* Info Card */
+
+.found-info-card {
+  background: linear-gradient(
+    145deg,
+    #eff6ff,
+    #f0fdf4
+  );
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  height: fit-content;
+}
+
+.info-icon {
+  font-size: 30px;
+
+  margin-bottom: 15px;
+}
+
+.found-info-card h3 {
+  font-size: 19px;
+
+  margin-bottom: 18px;
+}
+
+.found-info-card ul {
+  padding-left: 20px;
+}
+
+.found-info-card li {
+  margin-bottom: 14px;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+  .found-container {
+    grid-template-columns: 1fr;
+  }
+
+  .found-title h1 {
+    font-size: 26px;
+  }
+
+  .found-card {
+    padding: 25px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .found-header {
+    padding: 22px 5%;
+  }
+
+  .found-container {
+    width: 92%;
+    margin: 25px auto;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .cancel-button,
+  .submit-found-button {
+    width: 100%;
+  }
+
+}

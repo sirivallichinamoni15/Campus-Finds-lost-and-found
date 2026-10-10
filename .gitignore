@@ -1,0 +1,13 @@
+﻿frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+backend/lostfound/target/
+backend/lostfound/.env
+backend/lostfound/.env.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+backend/lostfound/lostfound/src/main/resources/application.properties.backup
+backend/lostfound/lostfound/src/main/resources/application.properties.backup

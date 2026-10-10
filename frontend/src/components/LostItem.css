@@ -1,0 +1,301 @@
+.lost-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* Header */
+
+.lost-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 25px 60px;
+}
+
+.back-button {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.back-button:hover {
+  color: #1e40af;
+}
+
+.lost-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.lost-title-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  background: #fef2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.lost-title h1 {
+  font-size: 28px;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.lost-title p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* Main */
+
+.lost-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 25px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 25px;
+  align-items: start;
+}
+
+
+/* Form Card */
+
+.lost-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.form-heading {
+  margin-bottom: 30px;
+}
+
+.form-heading h2 {
+  color: #1e293b;
+  font-size: 21px;
+  margin-bottom: 7px;
+}
+
+.form-heading p {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* Form */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 13px 14px;
+  font-size: 14px;
+  color: #1e293b;
+  outline: none;
+  transition: 0.25s;
+  background: #ffffff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow:
+    0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+
+/* Status */
+
+.status-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  margin-bottom: 25px;
+}
+
+.status-info > span {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  font-size: 17px;
+}
+
+.status-info strong {
+  display: block;
+  color: #dc2626;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.status-info p {
+  color: #64748b;
+  font-size: 11px;
+}
+
+
+/* Buttons */
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 5px;
+}
+
+.cancel-button,
+.submit-lost-button {
+  padding: 12px 20px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.cancel-button {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #64748b;
+}
+
+.cancel-button:hover {
+  background: #f8fafc;
+  color: #334155;
+}
+
+.submit-lost-button {
+  border: none;
+  background: linear-gradient(
+    135deg,
+    #dc2626,
+    #b91c1c
+  );
+  color: #ffffff;
+  box-shadow:
+    0 7px 18px rgba(220, 38, 38, 0.2);
+}
+
+.submit-lost-button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 22px rgba(220, 38, 38, 0.3);
+}
+
+
+/* Information Card */
+
+.lost-info-card {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.info-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.lost-info-card h3 {
+  color: #1e40af;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.lost-info-card ul {
+  padding-left: 18px;
+}
+
+.lost-info-card li {
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+  .lost-header {
+    padding: 22px 25px;
+  }
+
+  .lost-container {
+    grid-template-columns: 1fr;
+    margin: 25px auto;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .lost-card {
+    padding: 25px 20px;
+  }
+
+  .lost-title h1 {
+    font-size: 23px;
+  }
+
+  .form-buttons {
+    flex-direction: column-reverse;
+  }
+
+  .cancel-button,
+  .submit-lost-button {
+    width: 100%;
+  }
+
+}
