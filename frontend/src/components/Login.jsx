@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
@@ -15,7 +14,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/login",
+        "https://campus-finds-backend-2026.onrender.com/login",
         {
           email: email,
           password: password,
@@ -71,12 +70,12 @@ function Login() {
             ? "Invalid email or password"
             : `Login failed. Server error: ${error.response.status}`
         );
-      } else if (error.response === undefined && error.request) {
-        alert("Cannot connect to the backend. Please check whether Spring Boot is running.");
-      } else {
+      } else if (error.request) {
         alert(
-          error.message || "Login failed. Please try again."
+          "Cannot connect to the backend. Please check the Render server and CORS settings."
         );
+      } else {
+        alert(error.message || "Login failed. Please try again.");
       }
     }
   };
@@ -86,9 +85,7 @@ function Login() {
       <div className="login-left">
         <div className="brand-section">
           <div className="brand-icon">🔎</div>
-
           <h1>Lost &amp; Found</h1>
-
           <p>Campus Lost &amp; Found Portal</p>
         </div>
 
@@ -110,7 +107,6 @@ function Login() {
         <div className="login-card">
           <div className="login-header">
             <h2>Welcome Back 👋</h2>
-
             <p>Login to your campus account</p>
           </div>
 
@@ -139,17 +135,13 @@ function Login() {
               />
             </div>
 
-            <button
-              type="submit"
-              className="login-button"
-            >
+            <button type="submit" className="login-button">
               Login
             </button>
           </form>
 
           <div className="register-link">
             <span>Don't have an account?</span>
-
             <Link to="/register">Create Account</Link>
           </div>
         </div>
